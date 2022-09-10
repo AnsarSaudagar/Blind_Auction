@@ -1,0 +1,34 @@
+.barlow1{
+    font-family: 'Barlow', sans-serif;
+}
+.barlow2{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.bellefair{
+    font-family: 'Bellefair', serif;
+}
+
+.text18{
+    font-size:var(--text-size18);
+}
+.text28{
+    font-size:var(--text-size28);
+}
+.text32{
+    font-size:var(--text-size32);
+}
+.text150{
+    font-size:var(--text-size150);
+}
+
+
+/* ------------------------------------- */
+
+.flex-row{
+    display: flex;
+}
+
+.hidden{
+    display: none;
+}
+

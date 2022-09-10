@@ -1,0 +1,177 @@
+/* https://piccalil.li/blog/a-modern-css-reset */
+*{
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html, 
+body {
+    height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+img,button{
+    height: 100%;
+    width: 100%;
+}
+
+
+/* font-family: 'Barlow', sans-serif;
+font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Bellefair', serif; */
+
+
+/* Variables */
+:root{
+    --text-color-white:#FFFFFF;
+    --text-color-purple:#D0D6F9;
+    --text-color-black:#0B0D17;
+    --text-size28:1.75rem;
+    --text-size150:9.375rem;
+    --text-size18:1.125rem;
+    --text-size32:2rem;
+}
+
+body{
+  color: #ffffff;
+}
+
+/* main css */
+
+.home{
+  height: 100vh;
+  width: 100vw;
+  background:url(../assets/home/background-home-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 2.5rem;
+}
+
+.navbar{
+  height: 96px;
+  width: 100vw;
+  justify-content: space-between;
+  color: var(--text-color-white);
+  align-items: center;
+}
+
+.logo{
+  height: 3rem;
+  width: 3rem;
+  /* padding-left: 2rem; */
+  margin-left: 3vw;
+}
+.line{
+  position: absolute;
+  height: 1px;
+  width: 473px;
+  background: white;
+  /* stroke:#979797; */
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  left:180px;
+  z-index: 1;
+}
+
+.nav{
+  /* background:red; */
+  height: 100%;
+  width: 60vw;
+  align-items: center;
+  justify-content:center;
+  backdrop-filter: blur(81.5485px);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.nav-btns{
+  font-weight: 400;
+  width: 70%;
+  /* background:blue; */
+  justify-content: space-between;
+}
+
+
+
+.nav-btn{
+  /* background: green; */
+}
+
+.bold{
+  font-weight: 700;
+  margin-right: 0.75rem;
+}
+
+.main-content{
+  /* border:1px solid red; */
+
+}
+
+/* @media (max-width: 768px) {
+  .bold{
+    display: none;
+  }
+  
+} */
